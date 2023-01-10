@@ -1,0 +1,208 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+/* Margin and padding reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* 
+Color pallete:
+#7f3667
+#a53e76
+#bb437e
+#d24787
+#e44b8d
+#e2619f
+#e27bb1
+#e5a0c6
+#eec4dc
+ */
+
+/* Mobile first style */
+
+body{
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bolder;
+    color: #7b0252;
+    background-color: whitesmoke;
+}
+/* Delete decorations and paddings from hyperlinks and lists*/
+a{
+    text-decoration: none;
+}
+section ul{
+    list-style-type: none;
+    padding:0px;
+}
+
+footer{
+    padding: 3em;
+    background-color: #eec4dc;
+    margin-bottom: 0;
+} 
+
+/* Grid areas */
+
+header{
+    grid-area: header;
+}
+.banner{
+    grid-area: banner;
+}
+.products{
+    grid-area: products;
+}
+.product1{
+    grid-area: product1;
+}
+.product2{
+    grid-area: product2;
+}
+.product3{
+    grid-area: product3;
+}
+.footer{
+    grid-area: footer;
+}
+.socials{
+    grid-area: socials;
+}
+.footer-info{
+    grid-area: footer-info;
+}
+.payment-methods{
+    grid-area: payment-methods;
+}
+
+/* Grid layout */
+
+.general-grid{
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+    "header"
+    "banner"
+    "products"
+    "footer";
+} 
+.header{
+    background-color: #eec4dc;    font-family: 'roboto', sans-serif;
+    color: #ff7699;
+    display:grid;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    justify-items:stretch;
+    font-size: small;
+    margin: 20px;
+    padding: 20px;
+}
+.products{
+    background-color: #eec4dc;
+    background-image: url(../images/rounded-plus-connected.svg);    padding: 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+    "product1"
+    "product2"
+    "product3";
+    justify-items: center;
+}
+.productimg {
+/* Image size */
+    max-width: 100%;
+    justify-content: center;
+/* Image animation */
+    transition: all 0.5s;
+    overflow: hidden;
+}
+.productimg:hover {
+    transform: scale(1.1);
+}
+.banner{
+    background-color: #eec4dc;
+    color: #7f3667;
+    font-weight: 800;
+    padding:5rem;
+}
+.subtitle{
+    background-color: whitesmoke;
+    color: #7f3667;
+    font-weight: 800;
+}
+.shop-button{
+    padding-bottom: 20px;
+    background-color: whitesmoke;
+}
+.button-style{
+    border-color:#7b0252 !important;
+    background-color: #7b0252 !important;
+}
+.card-style{
+    background-color: whitesmoke;
+}
+.bestseller{
+    background-color: whitesmoke;
+    display: grid;
+    justify-content: space-around;
+}
+.footer{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-areas:
+    "socials"
+    "footer-info"
+    "payment-methods";
+    justify-content: center;
+}
+
+@media (max-width: 720px) and (min-width: 500px) {
+    .products{
+        padding: 20px;
+        display:grid;
+        background-color: #eec4dc;
+        background-image: url(../images/rounded-plus-connected.svg);
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "product1 product2"
+        "product1 product3";
+        align-items: center;
+    }
+    .product1{
+        grid-row: span 2;
+    }
+    .footer{
+        display: grid;
+        grid-gap: 50px;
+        grid-template-columns: repeat(3 1fr);
+        grid-template-areas:
+        "socials footer-info payment-methods";
+        justify-content: center;
+    }
+}
+
+@media (min-width:720px){
+    .products{
+        display:grid;
+        grid-gap:20px;
+        padding: 20px;
+        background-color: whitesmoke;
+        background-image: none;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "product1 product2 product3";
+        justify-items: center;
+        align-items: center;
+    }
+    .footer{
+        display: grid;
+        grid-gap: 50px;
+        grid-template-columns: repeat(3 1fr);
+        grid-template-areas:
+        "socials footer-info payment-methods";
+        justify-content: center;
+    }
+}
