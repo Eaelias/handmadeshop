@@ -1,35 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/style.css">
     <title>handmadeshop</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">home</a>
-                </li>
-                <li>
-                    <a href="shop.html">shop</a>
-                </li>
-                <li>
-                    <a href="bestsellers.html">bestsellers</a>
-                </li>
-                <li>
-                    <a href="productofthemonth.html">product of the month</a>
-                </li>
-                <li>
-                    <a href="about.html">about</a>
-                </li>
-                <li>
-                    <a href="contact.html">contact</a>
-                </li>
-            </ul>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Hand made shop</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="bestsellers.html">Bestsellers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="productofthemonth.html">Product of the
+                                month</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Information
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                                <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -45,40 +61,43 @@
                 <img src="../images/placeholder.png" alt="Placeholder for author's picture">
             </div>
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro enim, nostrum perferendis dicta aliquam, sit voluptate animi suscipit impedit aspernatur adipisci optio iure necessitatibus cumque beatae inventore pariatur. Dolores, nam.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro enim, nostrum perferendis dicta aliquam,
+                sit voluptate animi suscipit impedit aspernatur adipisci optio iure necessitatibus cumque beatae
+                inventore pariatur. Dolores, nam.
             </p>
         </section>
     </main>
-            <footer>
-            <section>
-            <!-- Social networks -->
-                <ul class="socials">
-                    <li>
-                        <img src="../images/instagram-icon.svg" alt="Pink camera Instagram icon">  
-                    </li>
-                    <li>
-                        <img src="../images/whatsapp-icon.svg" alt="White telefone in green speeph bubble whatsapp icon">
-                    </li>
-                    <li>
-                        <img src="../images/twitter-icon.svg" alt="Light blue flying bird Twitter icon">
-                    </li>
-                    <li>
-                        <img src="../images/youtube-icon.svg" alt="Red rectangle with a white triangle Youtube icon">
-                    </li>
-                </ul>
-                <!-- Payments methods -->
-                <ul class="paymentmethods">
-                    <li>
-                        <img src="../images/visa-icon.svg" alt="Visa card icon">
-                    </li>
-                    <li>
-                        <img src="../images/amex-icon.svg" alt="American express card icon">
-                    </li>
-                    <li>
-                        <img src="../images/mastercard-icon.svg" alt="Red and yellow circle in blue background Mastercard icon">
-                    </li>
-                </ul>
-            </section>
-        </footer>
+    <footer class="footer">
+        <!-- Social networks -->
+        <div class="socials">
+            <h4>
+                Follow us on
+            </h4>
+            <img src="../images/instagram-icon.svg" alt="Pink camera Instagram icon">
+            <img src="../images/whatsapp-icon.svg" alt="White telefone in green speeph bubble whatsapp icon">
+            <img src="../images/twitter-icon.svg" alt="Light blue flying bird Twitter icon">
+            <img src="../images/youtube-icon.svg" alt="Red rectangle with a white triangle Youtube icon">
+        </div>
+        <!-- General info placed on the footer -->
+        <div class="footer-info">
+            <p>
+                Each and every one of our handcrafted items is unique and made with love. Thank you for shopping with
+                us.
+            </p>
+        </div>
+        <!-- Payments methods -->
+        <div class="payment-methods">
+            <h5>
+                Payment Methods
+            </h5>
+            <img src="../images/visa-icon.svg" alt="Visa card icon">
+            <img src="../images/amex-icon.svg" alt="American express card icon">
+            <img src="../images/mastercard-icon.svg" alt="Red and yellow circle in blue background Mastercard icon">
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
