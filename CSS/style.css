@@ -6,18 +6,6 @@
     margin: 0;
     padding: 0;
 }
-/* 
-Color pallete:
-#7f3667
-#a53e76
-#bb437e
-#d24787
-#e44b8d
-#e2619f
-#e27bb1
-#e5a0c6
-#eec4dc
- */
 
 /* "Mobile first" style */
 
@@ -32,10 +20,6 @@ body{
 a{
     text-decoration: none;
 }
-/* section ul{
-    list-style-type: none;
-    padding:0px;
-} */
 
 footer{
     padding: 3em;
@@ -69,8 +53,11 @@ header{
 .footer{
     grid-area: footer;
 }
-.about-us{
+.about-us-text{
     grid-area: about-us;
+}
+.about-us-picture{
+    grid-area: about-us-picture;
 }
 .socials{
     grid-area: socials;
@@ -167,10 +154,7 @@ header{
 .card-text-price{
     color: grey;
 }
-.about-us{
-    display: grid;
-    justify-items: center;
-}
+
 .footer{
     display: grid;
     margin-top: 20px;
@@ -186,6 +170,16 @@ header{
     display: grid;
     justify-items: center;
 }
+.about-us{
+    font-size: smaller;
+    padding: 20px;
+}
+.about-us-picture{
+    padding: 20px;
+    display: grid;
+    max-width: 100%;
+}
+
 @media (max-width: 720px) and (min-width: 500px) {
     .products{
         padding: 20px;
@@ -202,7 +196,6 @@ header{
     .product1{
         grid-row: span 2;
     }
-    
     .footer{
         display: grid;
         grid-gap: 50px;
@@ -210,6 +203,23 @@ header{
         grid-template-areas:
         "socials footer-info payment-methods";
         justify-content: center;
+    }
+    .about-us{
+        padding: 20px;
+        font-size: small;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "about-us-picture about-us";
+        align-items: start;
+    }
+    .about-us-text{
+        max-width: 90%;
+    }
+    .about-us-picture{
+        padding: 20px;
+        display: grid;
+        max-width: 100%;
     }
 }
 
@@ -235,5 +245,23 @@ header{
         grid-template-areas:
         "socials footer-info payment-methods";
         justify-content: center;
+    }
+    .about-us{
+        font-size: medium;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "about-us-picture about-us";
+        align-items: start;
+    }
+    .about-us-text{
+        display: grid;
+        max-width: 90%;
+        align-items: center;
+    }
+    .about-us-picture{
+        padding: 20px;
+        display: grid;
+        max-width: 100%;
     }
 }
