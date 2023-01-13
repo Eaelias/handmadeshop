@@ -252,16 +252,13 @@ header{
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
         "about-us-picture about-us";
-        align-items: start;
+        align-items: center;
     }
     .about-us-text{
-        display: grid;
         max-width: 90%;
-        align-items: center;
     }
     .about-us-picture{
         padding: 20px;
-        display: grid;
         max-width: 100%;
     }
 }
