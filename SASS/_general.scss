@@ -1,0 +1,22 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+/* Margin and padding reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* "Mobile first" style */
+
+body{
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bolder;
+    color: #7b0252;
+    background-color: whitesmoke;
+}
+/* Delete decorations and paddings from hyperlinks and lists*/
+a{
+    text-decoration: none;
+}
