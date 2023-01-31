@@ -20,20 +20,6 @@ a {
   text-decoration: none;
 }
 
-/* "Mobile first" style */
-body {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-weight: bolder;
-  color: #7b0252;
-  background-color: whitesmoke;
-}
-
-/* Delete decorations and paddings from hyperlinks and lists*/
-a {
-  text-decoration: none;
-}
-
 footer {
   padding: 3em;
   background-color: #eec4dc;
@@ -49,18 +35,15 @@ header {
   grid-area: banner;
 }
 
-.products {
-  grid-area: products;
+.product {
+  grid-area: product;
 }
-
 .product1 {
   grid-area: product1;
 }
-
 .product2 {
   grid-area: product2;
 }
-
 .product3 {
   grid-area: product3;
 }
@@ -76,7 +59,6 @@ header {
 .about-us-text {
   grid-area: about-us;
 }
-
 .about-us-picture {
   grid-area: about-us-picture;
 }
@@ -98,7 +80,13 @@ header {
   margin-bottom: 1.5em;
   display: grid;
   grid-gap: 20px;
-  grid-template-areas: "header" "banner" "products" "footer";
+  grid-template-areas: "header" "banner" "product" "footer";
+}
+
+.shop-grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: "header" "banner" "product" "footer";
 }
 
 .header {
@@ -114,7 +102,7 @@ header {
   padding: 20px;
 }
 
-.products {
+.product {
   background-color: #eec4dc;
   background-image: url(../images/rounded-plus-connected.svg);
   padding: 20px;
@@ -123,7 +111,6 @@ header {
   grid-template-areas: "product1" "product2" "product3";
   justify-items: center;
 }
-
 .productimg {
   /* Image size */
   max-width: 100%;
@@ -131,7 +118,6 @@ header {
   /* Image animation time */
   transition: all 0.5s;
 }
-
 .productimg:hover {
   transform: scale(1.1);
 }
@@ -156,8 +142,8 @@ header {
 
 /* Added "!important" to change color of hover button */
 .button-style {
-  border-color: #7b0252 !important;
-  background-color: #7b0252 !important;
+  border-color: #7f3667 !important;
+  background-color: #7f3667 !important;
 }
 
 .card-style {
@@ -192,6 +178,13 @@ header {
   justify-content: center;
 }
 
+.socials img {
+  transition: all 0.5s;
+}
+.socials img:hover {
+  transform: scale(1.1);
+}
+
 .contact-form {
   display: grid;
   justify-items: center;
@@ -201,7 +194,6 @@ header {
   font-size: smaller;
   padding: 20px;
 }
-
 .about-us-picture {
   padding: 20px;
   display: grid;
@@ -209,7 +201,7 @@ header {
 }
 
 @media (max-width: 720px) and (min-width: 500px) {
-  .products {
+  .product {
     padding: 20px;
     display: grid;
     background-color: #eec4dc;
@@ -247,7 +239,7 @@ header {
   }
 }
 @media (min-width: 720px) {
-  .products {
+  .product {
     display: grid;
     grid-gap: 20px;
     padding: 20px;
